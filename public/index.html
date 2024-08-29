@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Cover Letter Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="editor">
+            <input type="text" id="month" placeholder="Month">
+            <input type="text" id="date" placeholder="Date">
+            <input type="text" id="location" placeholder="Location">
+            <textarea id="postalCode" placeholder="Postal Code"></textarea>
+            <input type="text" id="positionTitle" placeholder="Position Title">
+            <input type="text" id="companyName" placeholder="Company Name">
+            <textarea id="aResponsibility" placeholder="A Responsibility"></textarea>
+            <textarea id="companyProject" placeholder="Company's Related Project"></textarea>
+            <select id="templateSelect">
+                <option value="template1">Template 1</option>
+                <option value="template2">Template 2</option>
+            </select>
+            <button onclick="updateCoverLetter()">Update Cover Letter</button>
+            <button onclick="saveInput()">Save</button>
+            <button onclick="loadInput()">Load</button>
+        </div>
+        <div class="cover-letter-display" id="coverLetterDisplay">Your cover letter will appear here...</div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
